@@ -17,4 +17,338 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main_font, sans-serif);
+  font-variation-settings: "wght" var(--font_regular);
+  color: var(--accent_color);
+  background-color: var(--bg_color);
+  background-image: 
+  repeating-linear-gradient(
+        to right,
+        var(--stripe_light) 0px 2px,
+        transparent 2px 4px
+    ),
+  repeating-linear-gradient(
+        to bottom,
+        var(--stripe_light) 0px 2px,
+        transparent 2px 4px
+    ),
+   
+    linear-gradient(
+        to bottom,
+        var(--background_light) 0.01%, 
+        #1a1a1a
+    );
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+
+}
+
+.header {
+  
+  background-color: var(--bg_color, #fff);
+  font-family: var(--accent_font, sans-serif);
+  text-align: center;
+  border: 2px solid var(--accent_color, #000);
+  display: flex;
+  flex-direction: column;
+  inline-size: clamp(376px, 48.5%, 696px);
+  align-self: center;
+  justify-self: center;
+  margin-top: 102px;
+  margin-bottom: 100px;
+}
+
+.title {
+  font-family: var(--accent_font, sans-serif);
+  font-size: clamp(3.0625rem, 5vw, 4.0625rem);
+
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+padding-top: 136px;
+padding-bottom: 20px;
+text-decoration: none;
+}
+
+.subtitle {
+  font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+padding-bottom: 25px;
+}
+
+.theme-menu__button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+position: relative;
+  transition: 0.3s ease;
+}
+
+.header__theme-menu {
+  padding-bottom: 25px;
+}
+
+.theme-menu__list {
+  display: grid;
+  gap: 12px;
+  
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  left: -23px;
+  animation: arrow 0.5s ease-in-out infinite alternate;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.theme-menu__button::after {
+  content: ""; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  height: 2px; 
+  background-color: currentColor; 
+  transform: scaleX(0); 
+  transform-origin: left center; 
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:focus-visible {
+    outline: none; 
+    opacity: 0.6; 
+}
+
+.theme-menu__button:focus-visible::after {
+    transform: scaleX(1);
+}
+
+.main {
+  margin: auto;
+  width: var(--content-width);
+  display: grid;
+  gap: 50px;
+  inline-size: clamp(376px, 48.5%, 696px)
+}
+
+.section {
+  background-color: var(--bg_color, #fff);
+  justify-self: center;
+  border: 2px solid var(--text-color, #000);
+  font-family: var(--main_font);
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.button_card {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 5px;
+}
+
+.card__title {
+  font-size: 18px;
+font-style: normal;
+font-variation-settings: "wght" var(--title_fw);
+line-height: normal;
+margin-top: 3px;
+margin-bottom: 3px;
+margin-left: 10px;
+}
+
+.card__text {
+
+font-family: var(--main_font);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+width: 92%;
+margin: auto;
+padding-top: 32px;
+}
+
+.card_image-watermark {
+  position: relative;
+  display: grid;
+}
+
+.card_image {
+  width: 100%;
+  
+}
+
+
+.watermark {
+  font-family: var(--accent_font, sans-serif);
+  font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+opacity: 0.5;
+mix-blend-mode: hard-light;
+position: absolute;
+align-self: flex-start;
+    justify-self: self-end;
+    top: 25px;
+right: 25px;
+text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.card__icon-button{
+background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  margin-bottom: 25px;
+margin-right: 12px;
+margin-top: 12px;
+display: flex;
+
+}
+
+.like-icon {
+  transform-origin: center;
+}
+
+.card__like-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+  margin-bottom: 25px;
+margin-right: 25px;
+margin-top: 10px;
+padding-top: 8.5px;
+padding-bottom: 8.5px;;
+border: 2px solid var(--accent_color);
+width: 126px;
+}
+
+.button__text {
+  font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 90%;
+font-family: var(--accent_font);
+transform-origin: left center;
+}
+
+.button {
+  border: 2px solid var(--accent_color);
+  padding: 8px 18.5px 21px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.disk {
+  margin-inline: auto;
+}
+
+.dialog {
+  width: 26%;
+}
+
+.dialog_content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+
+}
+
+.dialog_title {
+  font-family: var(--accent_font, sans-serif);
+  font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+line-height: 150%;
+width: 75%;
+}
+
+.dialog_button {
+  border: 2px solid var(--accent_color);
+  font-family: var(--accent_font);
+  width: 100%;
+  margin-top: 30px;
+  padding: 9px;
+}
+
+.disk_svg {
+  margin-right: 20px;
+  margin-top: 14.5px;
+  margin-left: 7.5px;
+}
+
+
+
+.two {
+  filter: brightness(120%) sepia(30%);
+}
+
+.three {
+  filter: sepia(100%) contrast(90%) saturate(90%);
+}
+
+.four {
+  filter: brightness(80%) contrast(110%) hue-rotate(180deg);
+}
+
+.five {
+  filter: invert(80%) hue-rotate(90deg) brightness(90%);
+}
+
+.six {
+  filter: brightness(50%) contrast(120%);
+}
+
+.seven {
+  filter: grayscale(100%) contrast(150%) brightness(90%);
+}
+
+.eight {
+  filter: grayscale(90%) contrast(150%);
 }
