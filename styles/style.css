@@ -175,6 +175,7 @@ position: relative;
   display: flex;
   align-self: flex-end;
   margin-top: 5px;
+  margin-bottom: 102px;
 }
 
 .card__title {
@@ -358,6 +359,11 @@ width: 75%;
   
 }
 
+.floppy_dia {
+  width: 39px;
+  align-self: center;
+}
+
 
 .two {
   filter: brightness(120%) sepia(30%);
@@ -388,15 +394,3 @@ width: 75%;
 }
 
 
-@media (width <= 375px) {
-  .save-button {
-    flex-direction: column;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-
-  .save-button svg {
-    width: 1.75rem;
-    height: 1.75rem;
-  }
-}
