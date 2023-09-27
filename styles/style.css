@@ -306,6 +306,7 @@ transform-origin: left center;
   padding-top: 15px;
   padding-bottom: 15px;
   cursor: pointer;
+  background-color: var(--bg_color);
 }
 
 .button:focus{
@@ -352,6 +353,11 @@ width: 75%;
 }
 
 
+.floppy {
+  width: 21px;
+  
+}
+
 
 .two {
   filter: brightness(120%) sepia(30%);
@@ -379,4 +385,18 @@ width: 75%;
 
 .eight {
   filter: grayscale(90%) contrast(150%);
+}
+
+
+@media (width <= 375px) {
+  .save-button {
+    flex-direction: column;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .save-button svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
 }
