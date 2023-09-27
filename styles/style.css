@@ -21,31 +21,23 @@
   font-variation-settings: "wght" var(--font_regular);
   color: var(--accent_color);
   background-color: var(--bg_color);
-  background-image: 
-  repeating-linear-gradient(
-        to right,
-        var(--stripe_light) 0px 2px,
-        transparent 2px 4px
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--stripe_light) 0px 2px,
+      transparent 2px 4px
     ),
-  repeating-linear-gradient(
-        to bottom,
-        var(--stripe_light) 0px 2px,
-        transparent 2px 4px
+    repeating-linear-gradient(
+      to bottom,
+      var(--stripe_light) 0px 2px,
+      transparent 2px 4px
     ),
-   
-    linear-gradient(
-        to bottom,
-        var(--background_light) 0.01%, 
-        #1a1a1a
-    );
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-
+    linear-gradient(to bottom, var(--background_light) 0.01%, #1a1a1a);
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
 }
 
 .header {
-  
   background-color: var(--bg_color, #fff);
   font-family: var(--accent_font, sans-serif);
   text-align: center;
@@ -63,23 +55,22 @@
   font-family: var(--accent_font, sans-serif);
   font-size: clamp(3.0625rem, 5vw, 4.0625rem);
 
-
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-padding-top: 136px;
-padding-bottom: 20px;
-text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 136px;
+  padding-bottom: 20px;
+  text-decoration: none;
 }
 
 .subtitle {
   font-size: 23px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-padding-bottom: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-bottom: 25px;
 }
 
 .theme-menu__button {
@@ -91,14 +82,14 @@ padding-bottom: 25px;
   font-size: inherit;
   cursor: pointer;
   outline: none;
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
   font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-position: relative;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
   transition: 0.3s ease;
 }
 
@@ -109,7 +100,6 @@ position: relative;
 .theme-menu__list {
   display: grid;
   gap: 12px;
-  
 }
 
 .theme-menu__button:disabled {
@@ -131,26 +121,26 @@ position: relative;
 }
 
 .theme-menu__button::after {
-  content: ""; 
-  position: absolute; 
-  bottom: 0; 
+  content: "";
+  position: absolute;
+  bottom: 0;
   left: 0;
-  width: 100%; 
-  height: 2px; 
-  background-color: currentColor; 
-  transform: scaleX(0); 
-  transform-origin: left center; 
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
   transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus {
-    outline: none; 
-    opacity: 0.6; 
-    cursor: pointer;
+  outline: none;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .theme-menu__button:focus::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .main {
@@ -158,7 +148,7 @@ position: relative;
   width: var(--content-width);
   display: grid;
   gap: 50px;
-  inline-size: clamp(376px, 48.5%, 696px)
+  inline-size: clamp(376px, 48.5%, 696px);
 }
 
 .section {
@@ -168,7 +158,6 @@ position: relative;
   font-family: var(--main_font, sans-serif);
   display: flex;
   flex-direction: column;
-  
 }
 
 .button_card {
@@ -180,24 +169,23 @@ position: relative;
 
 .card__title {
   font-size: 18px;
-font-style: normal;
-font-variation-settings: "wght" var(--title_fw);
-line-height: normal;
-margin-top: 3px;
-margin-bottom: 3px;
-margin-left: 10px;
+  font-style: normal;
+  font-variation-settings: "wght" var(--title_fw);
+  line-height: normal;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
 }
 
 .card__text {
-
-font-family: var(--main_font, sans-serif);
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 21px;
-width: 92%;
-margin: auto;
-padding-top: 32px;
+  font-family: var(--main_font, sans-serif);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  width: 92%;
+  margin: auto;
+  padding-top: 32px;
 }
 
 .card_image-watermark {
@@ -207,45 +195,40 @@ padding-top: 32px;
 
 .card_image {
   width: 100%;
-  
 }
-
 
 .watermark {
   font-family: var(--accent_font, sans-serif);
   font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-opacity: 0.5;
-mix-blend-mode: hard-light;
-position: absolute;
-align-self: flex-start;
-    justify-self: self-end;
-    top: 25px;
-right: 25px;
-text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
-  text-shadow:
-      -1px 0 var(--text-stroke),
-      0 1px var(--text-stroke),
-      1px 0 var(--text-stroke),
-      0 -1px var(--text-stroke);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  position: absolute;
+  align-self: flex-start;
+  justify-self: self-end;
+  top: 25px;
+  right: 25px;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+  text-shadow: -1px 0 var(--text-stroke), 0 1px var(--text-stroke),
+    1px 0 var(--text-stroke), 0 -1px var(--text-stroke);
 
-@supports ((text-stroke: 1px var(--text-stroke)) or (-webkit-text-stroke: 1px var(--text-stroke))) {
-  .watermark {
+  @supports (
+    (text-stroke: 1px var(--text-stroke)) or
+      (-webkit-text-stroke: 1px var(--text-stroke))
+  ) {
+    .watermark {
       -webkit-text-stroke: 1px var(--text-stroke);
       text-stroke: 1px var(--text-stroke);
       text-shadow: none;
+    }
   }
 }
 
-}
-
-
-
-.card__icon-button{
-background: none;
+.card__icon-button {
+  background: none;
   border: none;
   padding: 0;
   margin: 0;
@@ -253,13 +236,12 @@ background: none;
   font-size: inherit;
   cursor: pointer;
   outline: none;
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
   margin-bottom: 25px;
-margin-right: 12px;
-margin-top: 12px;
-display: flex;
-
+  margin-right: 12px;
+  margin-top: 12px;
+  display: flex;
 }
 
 .like-icon {
@@ -275,30 +257,29 @@ display: flex;
   font-size: inherit;
   cursor: pointer;
   outline: none;
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
   margin-bottom: 25px;
-margin-right: 25px;
-margin-top: 10px;
-padding-top: 8.5px;
-padding-bottom: 8.5px;;
-border: 2px solid var(--accent_color);
-width: 126px;
-cursor: pointer;
+  margin-right: 25px;
+  margin-top: 10px;
+  padding-top: 8.5px;
+  padding-bottom: 8.5px;
+  border: 2px solid var(--accent_color);
+  width: 126px;
+  cursor: pointer;
 }
 
 .card__like-button:focus {
   box-shadow: 2px 2px 0px 0px var(--accent_color);
-  
 }
 
 .button__text {
   font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 90%;
-font-family: var(--accent_font, sans-serif);
-transform-origin: left center;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+  font-family: var(--accent_font, sans-serif);
+  transform-origin: left center;
 }
 
 .button {
@@ -310,7 +291,7 @@ transform-origin: left center;
   background-color: var(--bg_color);
 }
 
-.button:focus{
+.button:focus {
   box-shadow: 2px 2px 0px 0px var(--accent_color);
 }
 
@@ -325,18 +306,17 @@ transform-origin: left center;
 .dialog_content {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
-
 }
 
 .dialog_title {
   font-family: var(--accent_font, sans-serif);
   font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: uppercase;
-line-height: 150%;
-width: 75%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  line-height: 150%;
+  width: 75%;
 }
 
 .dialog_button {
@@ -353,17 +333,14 @@ width: 75%;
   margin-left: 7.5px;
 }
 
-
 .floppy {
   width: 21px;
-  
 }
 
 .floppy_dia {
   width: 39px;
   align-self: center;
 }
-
 
 .two {
   filter: brightness(120%) sepia(30%);
@@ -393,25 +370,22 @@ width: 75%;
   filter: grayscale(90%) contrast(150%);
 }
 
-
 @media (width <=375px) {
-
   .article {
-  padding-top: 120px;
+    padding-top: 120px;
   }
-  
-  .subtitle{
-  font-size: 14px;
+
+  .subtitle {
+    font-size: 14px;
   }
 
   .button {
     display: grid;
   }
 
-  .floppy{
+  .floppy {
     justify-self: center;
     padding-bottom: 8px;
     width: 28px;
   }
-
 }
