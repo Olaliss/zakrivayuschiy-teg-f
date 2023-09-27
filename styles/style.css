@@ -164,7 +164,7 @@
   display: flex;
   align-self: flex-end;
   margin-top: 5px;
-  margin-bottom: 102px;
+  margin-bottom: 25px;
 }
 
 .card__title {
@@ -172,9 +172,7 @@
   font-style: normal;
   font-variation-settings: "wght" var(--title_fw);
   line-height: normal;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  margin-left: 10px;
+  padding: 5px 12px;
 }
 
 .card__text {
@@ -297,6 +295,7 @@
 
 .disk {
   margin-inline: auto;
+  margin-bottom: 102px;
 }
 
 .dialog {
