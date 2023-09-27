@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main_font, sans-serif);
+  font-family: var(--main_font, 'Inter');
   font-variation-settings: "wght" var(--font_regular);
   color: var(--accent_color);
   background-color: var(--bg_color);
@@ -155,7 +155,7 @@
   background-color: var(--bg_color, #fff);
   justify-self: center;
   border: 2px solid var(--accent_color);
-  font-family: var(--main_font, sans-serif);
+  font-family: var(--main_font, 'Inter');
   display: flex;
   flex-direction: column;
 }
@@ -178,7 +178,7 @@
 }
 
 .card__text {
-  font-family: var(--main_font, sans-serif);
+  font-family: var(--main_font, 'Inter');
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
