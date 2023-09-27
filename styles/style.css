@@ -394,3 +394,24 @@ width: 75%;
 }
 
 
+@media (width <=375px) {
+
+  .article {
+  padding-top: 120px;
+  }
+  
+  .subtitle{
+  font-size: 14px;
+  }
+
+  .button {
+    display: grid;
+  }
+
+  .floppy{
+    justify-self: center;
+    padding-bottom: 8px;
+    width: 28px;
+  }
+
+}
