@@ -16,6 +16,8 @@
     --stripe_light: #d3d3d3;
     --background_light: #e7e7e7;
     --text_button_light: #fff;
+    --text_button: var(--text_button_light);
+    --text_button_dark: #00cc14;
 }
 
 :root.theme-dark {
@@ -30,6 +32,8 @@
         --text_fw: 465;
         --title_fw: 785;
         --text-stroke: #000;
+        --text_button_light: #fff;
+        --text_button: var(--text_button_dark);
         --text_button_dark: #00cc14;
     
 }
@@ -47,6 +51,8 @@
         --text_fw: 465;
         --title_fw: 785;
         --text-stroke: #000;
+        --text_button_light: #fff;
+        --text_button: var(--text_button_dark);
         --text_button_dark: #00cc14;
     }
 }

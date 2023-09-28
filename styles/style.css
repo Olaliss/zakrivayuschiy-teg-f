@@ -266,7 +266,7 @@
   width: 126px;
   cursor: pointer;
   position: relative;
-  background-color: #fff;
+  background-color: transparent;
   overflow: hidden;
   
 }
@@ -334,6 +334,10 @@ span.button__text {
   color: var(--accent_color);
 }
 
+.button__text{
+  color: var(--text_button);
+}
+
 .button:focus {
   box-shadow: 2px 2px 0px 0px var(--accent_color);
 }
@@ -382,11 +386,13 @@ span.button__text {
 .floppy {
   width: 21px;
   mix-blend-mode: difference;
+  margin-right: 8px;
 }
 
 .floppy_dia {
   width: 39px;
   align-self: center;
+  margin-right: 20px;
 }
 
 .two {
