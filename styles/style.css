@@ -265,10 +265,45 @@
   border: 2px solid var(--accent_color);
   width: 126px;
   cursor: pointer;
+  
+}
+
+.card__like-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent_color); 
+  transform: translateX(-100%); 
+  transition: transform 0.5s ease-in-out; 
+  mix-blend-mode: difference; 
+  z-index: 0; 
+}
+
+.card__like-button span {
+  position: relative; 
+  color: var(--accent_color); 
+  z-index: 2;
+}
+
+.card__like-button:hover {
+  transition: color 0.5s ease-in-out;
+  background-color: black;
+}
+
+.button:hover {
+  transition: color 0.5s ease-in-out;
+  background-color: black;
 }
 
 .card__like-button:focus {
   box-shadow: 2px 2px 0px 0px var(--accent_color);
+}
+
+.card__like-button:hover::before {
+  transform: translateX(0);
 }
 
 .button__text {
@@ -278,6 +313,7 @@
   line-height: 90%;
   font-family: var(--accent_font, sans-serif);
   transform-origin: left center;
+  mix-blend-mode: difference;
 }
 
 .button {
@@ -287,6 +323,7 @@
   padding-bottom: 15px;
   cursor: pointer;
   background-color: var(--bg_color);
+  color: var(--accent_color);
 }
 
 .button:focus {
@@ -334,6 +371,7 @@
 
 .floppy {
   width: 21px;
+  mix-blend-mode: difference;
 }
 
 .floppy_dia {
