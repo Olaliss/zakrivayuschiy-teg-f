@@ -290,9 +290,7 @@
   z-index: 2;
 }
 
-.card__like-button:hover span {
-  color: white; 
-}
+
 
 
 .card__like-button:hover {
