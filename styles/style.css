@@ -355,6 +355,7 @@ span.button__text {
 .dialog_content {
   display: flex;
   justify-content: center;
+  color: var(--accent_color);
 }
 
 .dialog_title {
