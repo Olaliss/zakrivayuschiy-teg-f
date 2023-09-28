@@ -189,6 +189,7 @@
 .card_image-watermark {
   position: relative;
   display: grid;
+  border: 2px solid var(--accent_color);
 }
 
 .card_image {
@@ -431,6 +432,14 @@ span.button__text {
 @media (width <=375px) {
   .article {
     padding-top: 120px;
+  }
+
+  .title {
+    padding-top: 120px;
+  }
+
+  .section {
+    padding-bottom: 57.5px;
   }
 
   .subtitle {
