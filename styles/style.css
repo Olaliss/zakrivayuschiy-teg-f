@@ -430,8 +430,12 @@ span.button__text {
   z-index: 2;
 }
 
-.button:hover::before {
+.dialog_button:hover::before {
   transform: translateX(0);
+}
+
+.dialog_text {
+  mix-blend-mode: difference;
 }
 
 .disk_svg {
