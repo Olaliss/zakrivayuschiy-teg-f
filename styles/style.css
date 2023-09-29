@@ -337,6 +337,7 @@ span.button__text {
 
 .button__text{
   color: var(--text_button);
+  mix-blend-mode: difference;
 }
 
 .button:focus {
@@ -350,11 +351,11 @@ span.button__text {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--bg_color);
+  background-color: var(--accent_color);
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
   z-index: 0;
-  mix-blend-mode: difference;
+  
 }
 
 
@@ -407,6 +408,30 @@ span.button__text {
   cursor: pointer;
   background-color: var(--bg_color);
   color: var(--accent_color);
+  position: relative;
+  overflow: hidden;
+}
+
+.dialog_button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent_color);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.dialog_button span {
+  position: relative; 
+  z-index: 2;
+}
+
+.button:hover::before {
+  transform: translateX(0);
 }
 
 .disk_svg {

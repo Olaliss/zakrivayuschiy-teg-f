@@ -35,7 +35,7 @@
         --text_button_light: #fff;
         --text_button: var(--text_button_dark);
         --text_button_dark: #00cc14;
-    
+        
 }
 
 @media (prefers-color-scheme: dark) {
