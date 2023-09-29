@@ -410,6 +410,7 @@ span.button__text {
   color: var(--accent_color);
   position: relative;
   overflow: hidden;
+
 }
 
 .dialog_button::before {
@@ -436,6 +437,7 @@ span.button__text {
 
 .dialog_text {
   mix-blend-mode: difference;
+  color: var(--text_button);
 }
 
 .disk_svg {
