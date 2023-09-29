@@ -188,8 +188,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  width: 92%;
-  padding: 25px;
+  width: 100%;
+  padding: 25px 24px 0;
   padding-bottom: 0;
 }
 
@@ -245,14 +245,15 @@
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  
+  border: 2px solid transparent;
   margin-right: 12px;
-  
   display: flex;
 }
 
-.card__icon-button:focus {
-  border: 2px solid transparent;
+
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent_color);
 }
 
 .like-icon {
@@ -301,7 +302,11 @@
   z-index: 2;
 }
 
+.section .card__text:first-child {
+  padding-top: 25px;
+  }
 
+ 
 
 
 .card__like-button:hover {
@@ -503,7 +508,12 @@ span.button__text {
 }
 
 .footer {
-  margin-top: 50px;
+  margin: 50px auto 100px;
+}
+
+.footer .button_card {
+  margin: 0;
+  margin-block-start: 0;
 }
 
 @media (width <=375px) {
@@ -521,11 +531,16 @@ span.button__text {
 
   .card__text {
     width: 355px;
+    padding: 28px 25px 0;
   }
 
   .button {
     display: grid;
     margin-bottom: 102px;
+  }
+
+  .button_card {
+    margin-block-start: 20px;
   }
 
   .button__text {
@@ -537,4 +552,5 @@ span.button__text {
     padding-bottom: 8px;
     width: 28px;
   }
+
 }
