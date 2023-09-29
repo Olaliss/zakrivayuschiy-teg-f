@@ -242,9 +242,9 @@
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  margin-bottom: 25px;
+  
   margin-right: 12px;
-  margin-top: 12px;
+  
   display: flex;
 }
 
@@ -267,9 +267,7 @@
   outline: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  margin-bottom: 25px;
-  margin-right: 25px;
-  margin-top: 10px;
+  
   padding-top: 8.5px;
   padding-bottom: 8.5px;
   border: 2px solid var(--accent_color);
@@ -277,7 +275,8 @@
   position: relative;
   background-color: transparent;
   overflow: hidden;
-  
+  min-inline-size: 130px;
+    min-block-size: 38px;
 }
 
 .card__like-button::before {
