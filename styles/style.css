@@ -47,7 +47,7 @@
   inline-size: clamp(376px, 48.5%, 696px);
   align-self: center;
   justify-self: center;
-  margin-top: 102px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -98,9 +98,13 @@
 }
 
 .theme-menu__list {
-  display: grid;
+  display: inline-grid;
   gap: 12px;
+  text-align: start;
+  margin-left: 20px;
 }
+
+
 
 .theme-menu__button:disabled {
   opacity: 0.6;
@@ -182,8 +186,9 @@
   font-weight: 400;
   line-height: 21px;
   width: 92%;
-  margin: auto;
-  padding-top: 32px;
+  
+  padding: 25px;
+  padding-bottom: 0;
 }
 
 .card_image-watermark {
@@ -385,7 +390,7 @@ span.button__text {
 }
 
 .dialog::backdrop {
-  color: black;
+  background-color: black;
   opacity: 0.75;
 }
 
@@ -506,10 +511,6 @@ span.button__text {
 
   .subtitle {
     font-size: 14px;
-  }
-
-  .card__text {
-    padding-top: 40px;
   }
 
   .button_card {
