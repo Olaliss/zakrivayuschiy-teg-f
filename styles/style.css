@@ -243,6 +243,10 @@
   display: flex;
 }
 
+.card__icon-button:focus {
+  border: 2px solid transparent;
+}
+
 .like-icon {
   transform-origin: center;
 }
@@ -380,6 +384,11 @@ span.button__text {
   border: 2px solid var(--accent_color);
 }
 
+.dialog::backdrop {
+  color: black;
+  opacity: 0.75;
+}
+
 .dialog_content {
   display: flex;
   justify-content: center;
@@ -495,15 +504,24 @@ span.button__text {
     padding-top: 120px;
   }
 
-  .section {
-    padding-bottom: 57.5px;
-  }
-
   .subtitle {
     font-size: 14px;
   }
 
+  .card__text {
+    padding-top: 40px;
+  }
+
+  .button_card {
+    margin-bottom: 0;
+  }
+
   .button {
+    display: grid;
+    margin-bottom: 102px;
+  }
+
+  .button__text {
     display: grid;
   }
 
